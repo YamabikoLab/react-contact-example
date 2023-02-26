@@ -1,8 +1,15 @@
 import React from "react";
-import Contact from "./components/page/Contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
+import Grid from "@mui/material/Grid";
 
 function App(): JSX.Element {
-  return <Contact />;
+  return (
+    <Grid container>
+      <Navbar />
+      <Outlet />
+    </Grid>
+  );
 }
 
 export default App;

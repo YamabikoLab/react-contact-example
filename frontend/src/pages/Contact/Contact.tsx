@@ -12,8 +12,9 @@ import {
 import React from "react";
 import { type SubmitHandler, useForm, Controller } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
+import { Form, useNavigate } from "react-router-dom";
 
-interface IFormInput {
+export interface IFormInput {
   firstName: string;
   lastName: string;
   email: string;
@@ -29,9 +30,11 @@ const Contact = (): JSX.Element => {
       contact: "",
     },
   });
+  const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     console.log(data);
+    navigate("/confirm", { replace: true, state: data });
   };
 
   const theme = createTheme();
@@ -50,13 +53,14 @@ const Contact = (): JSX.Element => {
           <Typography component="h1" variant="h5">
             お問い合わせフォーム
           </Typography>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <Form method="post" onSubmit={handleSubmit(onSubmit)}>
             <Box sx={{ mt: 3 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <Controller
                     name="lastName"
                     control={control}
+                    rules={{ required: true }}
                     render={({ field }) => (
                       <TextField
                         fullWidth
@@ -72,6 +76,7 @@ const Contact = (): JSX.Element => {
                   <Controller
                     name="firstName"
                     control={control}
+                    rules={{ required: true }}
                     render={({ field }) => (
                       <TextField
                         fullWidth
@@ -86,6 +91,7 @@ const Contact = (): JSX.Element => {
                   <Controller
                     name="email"
                     control={control}
+                    rules={{ required: true }}
                     render={({ field }) => (
                       <TextField
                         fullWidth
@@ -100,6 +106,7 @@ const Contact = (): JSX.Element => {
                   <Controller
                     name="contact"
                     control={control}
+                    rules={{ required: true }}
                     render={({ field }) => (
                       <TextField
                         {...field}
@@ -122,7 +129,7 @@ const Contact = (): JSX.Element => {
             >
               送信
             </Button>
-          </form>
+          </Form>
         </Box>
       </Container>
       <DevTool control={control} />
