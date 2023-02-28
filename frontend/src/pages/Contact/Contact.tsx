@@ -39,9 +39,8 @@ const Contact = (): JSX.Element => {
 
   const theme = createTheme();
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Container component="main" maxWidth="xs">
-        <CssBaseline />
         <Box
           sx={{
             marginTop: 8,
@@ -133,7 +132,7 @@ const Contact = (): JSX.Element => {
         </Box>
       </Container>
       <DevTool control={control} />
-    </ThemeProvider>
+    </>
   );
 };
 
