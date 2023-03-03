@@ -1,33 +1,52 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { Sidebar } from "flowbite-react";
+import {
+  HiArrowSmRight,
+  HiChartPie,
+  HiInbox,
+  HiShoppingBag,
+  HiTable,
+  HiUser,
+} from "react-icons/hi";
+import React from "react";
+import "./index.css";
+import CommonNavbar from "./components/Navbar/CommonNavbar";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div className="dark">
+        <CommonNavbar />
+        <div className="w-fit h-screen">
+          <Sidebar aria-label="Sidebar with multi-level dropdown example">
+            <Sidebar.Items>
+              <Sidebar.ItemGroup>
+                <Sidebar.Item href="#" icon={HiChartPie}>
+                  Dashboard
+                </Sidebar.Item>
+                <Sidebar.Collapse icon={HiShoppingBag} label="E-commerce">
+                  <Sidebar.Item href="#">Products</Sidebar.Item>
+                </Sidebar.Collapse>
+                <Sidebar.Item href="#" icon={HiInbox}>
+                  Inbox
+                </Sidebar.Item>
+                <Sidebar.Item href="#" icon={HiUser}>
+                  Users
+                </Sidebar.Item>
+                <Sidebar.Item href="#" icon={HiShoppingBag}>
+                  Products
+                </Sidebar.Item>
+                <Sidebar.Item href="#" icon={HiArrowSmRight}>
+                  Sign In
+                </Sidebar.Item>
+                <Sidebar.Item href="#" icon={HiTable}>
+                  Sign Up
+                </Sidebar.Item>
+              </Sidebar.ItemGroup>
+            </Sidebar.Items>
+          </Sidebar>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </>
   );
 }
 
