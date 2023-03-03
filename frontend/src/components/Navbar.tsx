@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className="p-3 border-gray-200 rounded bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <nav className="p-3 border-gray-200 rounded bg-gray-50 dark:bg-blue-500 dark:border-gray-700">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center">
           <img
@@ -17,7 +17,7 @@ const Navbar = (): JSX.Element => {
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-hamburger"
           aria-expanded="false"
         >

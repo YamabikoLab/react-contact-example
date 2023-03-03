@@ -6,8 +6,10 @@ import Sidebar from "./components/Sidebar";
 function App(): JSX.Element {
   return (
     <>
-      <Navbar />
-      <Sidebar />
+      <div className="dark">
+        <Navbar />
+        <Sidebar />
+      </div>
     </>
   );
 }
