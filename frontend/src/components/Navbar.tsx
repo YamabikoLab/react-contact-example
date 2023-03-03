@@ -3,17 +3,7 @@ import React from "react";
 const Navbar = (): JSX.Element => {
   return (
     <nav className="p-3 border-gray-200 rounded bg-gray-50 dark:bg-blue-500 dark:border-gray-700">
-      <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-6 mr-3 sm:h-10"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            React Example
-          </span>
-        </a>
+      <div className="container flex flex-wrap items-center  mx-auto">
         <button
           data-collapse-toggle="navbar-hamburger"
           type="button"
@@ -36,6 +26,9 @@ const Navbar = (): JSX.Element => {
             ></path>
           </svg>
         </button>
+        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          React Example
+        </span>
         <div className="hidden w-full" id="navbar-hamburger">
           <ul className="flex flex-col mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
             <li>
