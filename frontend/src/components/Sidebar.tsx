@@ -10,13 +10,30 @@ import {
 } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", icon: HomeIcon, href: "#", current: true },
-  { name: "Team", icon: UsersIcon, href: "#", count: 3, current: false },
-  { name: "Projects", icon: FolderIcon, href: "#", count: 4, current: false },
-  { name: "Calendar", icon: CalendarIcon, href: "#", current: false },
-  { name: "Documents", icon: InboxIcon, href: "#", count: 12, current: false },
-  { name: "Reports", icon: ChartBarIcon, href: "#", current: false },
-  { name: "Contact", icon: EnvelopeIcon, href: "contact", current: false },
+  { name: "ダッシュボード", icon: HomeIcon, href: "#", current: true },
+  { name: "チーム", icon: UsersIcon, href: "#", count: 3, current: false },
+  {
+    name: "プロジェクト",
+    icon: FolderIcon,
+    href: "#",
+    count: 4,
+    current: false,
+  },
+  { name: "カレンダー", icon: CalendarIcon, href: "#", current: false },
+  {
+    name: "ドキュメント",
+    icon: InboxIcon,
+    href: "#",
+    count: 12,
+    current: false,
+  },
+  { name: "報告書", icon: ChartBarIcon, href: "#", current: false },
+  {
+    name: "お問い合わせ",
+    icon: EnvelopeIcon,
+    href: "contact",
+    current: false,
+  },
 ];
 
 function classNames(...classes: string[]): string {

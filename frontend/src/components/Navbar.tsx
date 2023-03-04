@@ -3,10 +3,10 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "ダッシュボード", href: "#", current: true },
+  { name: "チーム", href: "#", current: false },
+  { name: "プロジェクト", href: "#", current: false },
+  { name: "カレンダー", href: "#", current: false },
 ];
 
 function classNames(...classes: string[]): string {
@@ -34,7 +34,7 @@ export default function Navbar(): JSX.Element {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <span className="text-white font-bold text-xl">
-                    React Contact Example
+                    Reactお問い合わせサンプル
                   </span>
                   {/* <img
                     className="block h-8 w-auto lg:hidden"
