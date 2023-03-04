@@ -10,7 +10,9 @@ function App(): JSX.Element {
       <div className="h-screen">
         <Navbar />
         <div className="grid grid-cols-5 h-screen">
-          <Sidebar />
+          <div className="w-fit md:w-auto">
+            <Sidebar />
+          </div>
           <div className="col-span-4 m-10">
             <Outlet />
           </div>
