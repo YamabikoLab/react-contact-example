@@ -84,7 +84,7 @@ export default function Navbar(): JSX.Element {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://robohash.org/6bd4ff963ee4811686524cb99c77d88b?set=set4&bgset=&size=400x400"
+                        src="https://www.gravatar.com/avatar/9104da215d8cdd177b5b8a9352cccadb"
                         alt=""
                       />
                     </Menu.Button>
