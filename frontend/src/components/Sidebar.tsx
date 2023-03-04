@@ -27,7 +27,7 @@ const navigation = [
     count: 12,
     current: false,
   },
-  { name: "報告書", icon: ChartBarIcon, href: "#", current: false },
+  { name: "報告書", icon: ChartBarIcon, href: "reports", current: false },
   {
     name: "お問い合わせ",
     icon: EnvelopeIcon,
