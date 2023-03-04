@@ -29,3 +29,15 @@ src/input.css
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
+
+https://headlessui.com/
+
+```
+npm install @headlessui/react@latest
+```
+
+https://heroicons.com/
+
+```
+npm install @heroicons/react
+```
