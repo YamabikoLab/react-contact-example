@@ -24,14 +24,7 @@ function classNames(...classes: string[]): string {
 export default function Sidebar(): JSX.Element {
   return (
     <div className="flex min-h-0 flex-1 flex-col bg-indigo-700 w-64 h-screen">
-      <div className="flex flex-1 flex-col overflow-y-auto pt-5 pb-4">
-        <div className="flex flex-shrink-0 items-center px-4">
-          <img
-            className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
-            alt="Your Company"
-          />
-        </div>
+      <div className="flex flex-1 flex-col overflow-y-auto pb-4">
         <nav className="mt-5 flex-1 space-y-1 px-2" aria-label="Sidebar">
           {navigation.map((item) => (
             <a
