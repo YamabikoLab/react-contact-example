@@ -25,7 +25,7 @@ function classNames(...classes: string[]): string {
 
 export default function Sidebar(): JSX.Element {
   return (
-    <div className="flex min-h-0 flex-1 flex-col bg-indigo-700 w-64 h-screen">
+    <div className="flex min-h-0 flex-1 flex-col bg-indigo-700 h-full">
       <div className="flex flex-1 flex-col overflow-y-auto pb-4">
         <nav className="mt-5 flex-1 space-y-1 px-2" aria-label="Sidebar">
           {navigation.map((item) => (

@@ -7,11 +7,13 @@ import Sidebar from "./components/Sidebar";
 function App(): JSX.Element {
   return (
     <>
-      <Navbar />
-      <div className="grid grid-cols-2">
-        <Sidebar />
-        <div>
-          <Outlet />
+      <div className="h-screen">
+        <Navbar />
+        <div className="grid grid-cols-5 h-screen">
+          <Sidebar />
+          <div className="col-span-4 m-10">
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
