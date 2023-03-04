@@ -8,6 +8,7 @@ import {
   InboxIcon,
   UsersIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "ダッシュボード", icon: HomeIcon, href: "/", current: true },
@@ -50,9 +51,9 @@ export default function Sidebar(): JSX.Element {
       <div className="flex flex-1 flex-col overflow-y-auto pb-4">
         <nav className="mt-5 flex-1 space-y-1 px-2" aria-label="Sidebar">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
+              to={item.href}
               className={classNames(
                 item.current
                   ? "bg-indigo-800 text-white"
@@ -75,7 +76,7 @@ export default function Sidebar(): JSX.Element {
               >
                 {item.name}
               </span>
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
