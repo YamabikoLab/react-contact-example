@@ -41,3 +41,7 @@ https://heroicons.com/
 ```
 npm install @heroicons/react
 ```
+
+```
+npm install -D @tailwindcss/typography
+```
