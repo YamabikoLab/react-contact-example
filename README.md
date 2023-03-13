@@ -1,4 +1,4 @@
-# React Contact Example
+# react-frontend
 
 ```
 npm install -D tailwindcss
